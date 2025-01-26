@@ -19,7 +19,7 @@ const Weather = () => {
             case 'islamabad':
                 return "/video/islamabad4.mp4";
             case 'murree':
-                return "/video/murree.mp4";
+                return "/video/muree.mp4";
             case 'peshawar':
                 return "/video/video6.mp4";
             case 'multan':

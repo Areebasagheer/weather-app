@@ -30,7 +30,7 @@ export default function App() {
             renders the first one that matches the current URL. */}
         <Routes>
           <Route path="/weather" element={<Weather />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
