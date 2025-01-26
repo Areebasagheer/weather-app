@@ -8,7 +8,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  // Link
+  Link,
+  Navigate
 } from "react-router-dom";
 
 export default function App() {
@@ -29,8 +30,10 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Routes>
-          <Route path="/weather" element={<Weather />} />
           <Route path="/" element={<Home />} />
+          <Route path="/weather" element={<Weather />} />
+          <Route path="*" element={<Navigate to="/" />} />
+          
         </Routes>
       </div>
     </Router>

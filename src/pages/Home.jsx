@@ -1,9 +1,13 @@
-import React from 'react'
-// import { Link } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate('/weather');
+  };
+
   return (
     <>
     <div className='back-img' >
@@ -12,9 +16,8 @@ function Home() {
         <h1> Weather</h1>
         <h2>ForeCasts</h2>
         <br />
-        <Link to="/weather">
-            <button className="btn1">Get Started</button>
-          </Link>
+        <button className="btn1" onClick={handleNavigation}>Get Started</button>
+        
       </div>
      
     </div>
